@@ -434,11 +434,9 @@
     <div class="hero animate-in">
       <span class="badge">10分セミナー動画</span>
       <h1>
-
-        「最短10分」で整理する
+        なぜ「再生」できるのか。
       </h1>
       <p class="hero-desc">
-        なぜ「再生」できるのか。<br>
         アスリート再生プログラム「リスタート」の理論を公開中。
       </p>
     </div>
@@ -472,6 +470,9 @@
 
   <script>
     const VIDEOS = [
+      { title: "マッサージや治療を定期的にやらないと体がもたない原因", id: "FmdBWmzCT2Q", time: "約7分" },
+      { title: "テーピングやサポーターに頼りきりになっている人へ", id: "6fdKJGQfKFs", time: "約7分" },
+      { title: "アスリートの不調４分類", id: "wwfbr7EsIrc", time: "約8分" },
       { title: "怪我・故障を繰り返す理由", id: "geFm1ryiWc8" },
       { title: "フォーム改善をしてから動きがおかしくなった人へ", id: "9XxCJZG3Tpc" },
       { title: "長期スランプに陥るアスリートに共通するパターン", id: "1YNEa0KgzTk" },
@@ -498,7 +499,7 @@
       <div class="content">
         <h3>${v.title}</h3>
         <div class="meta">
-          <span>⏱</span> 約10分
+          <span>⏱</span> ${v.time || '約10分'}
         </div>
       </div>
     </div>
